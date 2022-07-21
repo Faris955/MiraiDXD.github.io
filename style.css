@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap");
+:root {
+  --main-color: #ff4646;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.3rem solid rgba(255, 255, 255, 0.3);
+}
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  /* biar scrollnya halus */
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+}
+section {
+  padding: 1rem;
+}
+.header {
+  background: var(--bg);
+  border-bottom: var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 5%;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#menu-btn {
+  display: none;
+  color: white;
+}
+.header .logo h3 {
+  position: relative;
+  right: -10rem;
+  font-size: 5rem;
+  color: white;
+}
+.header .logo span {
+  color: var(--main-color);
+}
+.header .navbar a {
+  padding: 1rem;
+  margin: 0 5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+.header .navbar a:hover {
+  background: var(--main-color);
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+.home {
+  margin-top: 10rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  justify-content: center;
+  min-height: 80rem;
+  display: flex;
+  background: url(/img/bg8.jpg) no-repeat center;
+}
+.home h3 {
+  color: white;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.home span {
+  color: var(--main-color);
+}
+.about {
+  min-height: 60rem;
+}
+.about h1 {
+  text-align: center;
+  color: white;
+  font-size: 8rem;
+}
+.about span {
+  color: var(--main-color);
+}
+.about .row span {
+  color: var(--main-color);
+  font-size: 3rem;
+}
+.about .row p {
+  color: white;
+  font-size: 2rem;
+}
+.about .row img {
+  position: relative;
+  right: -10%;
+  width: 80%;
+}
+.about .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--main-color);
+  cursor: pointer;
+}
+.about .btn:hover {
+  transition: ease-in-out 0.3s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+.project h1 {
+  padding: 2rem;
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+.project h1 span {
+  color: var(--main-color);
+}
+.project .row h3 {
+  color: white;
+  font-size: 4rem;
+}
+.project .row {
+  height: min-content;
+  border-top: 0.2rem solid rgb(255, 255, 255, 0.3);
+  border-bottom: 0.2rem solid rgb(255, 255, 255, 0.3);
+}
+.project p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.project .row img {
+  position: relative;
+  right: -30%;
+  width: 70%;
+}
+.project .row .col {
+  color: #ff4646;
+}
+.project a {
+  text-decoration: none;
+}
+.project a:hover .row .col {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.project .row1 img {
+  width: 70%;
+}
+.contact h1 {
+  margin-top: 10rem;
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+}
+.contact h1 span {
+  color: var(--main-color);
+}
+.contact {
+  text-decoration: none;
+  text-align: left;
+}
+.contact .sosmed {
+  align-items: center;
+  text-align: center;
+}
+.contact h3 {
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.contact .sosmed a {
+  text-align: center;
+  text-decoration: none;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  border: var(--border);
+  margin: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.contact .sosmed a:hover {
+  background-color: var(--main-color);
+}
+#preloader {
+  background: #000 url(/img/loader2.gif) no-repeat center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  #menu-btn:hover {
+    color: var(--main-color);
+  }
+  .header .icon {
+    font-size: 3rem;
+  }
+  .header .logo h3 {
+    font-size: 4rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: var(--black);
+    width: 25rem;
+    height: 30rem;
+  }
+  .header .navbar.active {
+    right: 0%;
+  }
+  /* home */
+  .home .konten h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .about {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about h1 {
+    font-size: 4rem;
+  }
+
+  .about .row img {
+    position: relative;
+    right: 0%;
+    width: 100%;
+  }
+  .about .row p {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+  }
+  .about .row span {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--main-color);
+  }
+  .about .btn {
+    margin-top: rem;
+    padding: 0.9rem 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+  }
+  .project h1 {
+    font-size: 4rem;
+  }
+  .project .row h3 {
+    font-size: 2rem;
+  }
+  .project .row p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .project .row img {
+    width: 60%;
+  }
+  .project a:hover .row {
+    background: var(--main-color);
+  }
+  .contact h1 {
+    font-size: 4rem;
+  }
+}
