@@ -336,3 +336,8 @@ section {
     font-size: 4rem;
   }
 }
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
