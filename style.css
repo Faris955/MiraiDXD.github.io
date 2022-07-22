@@ -147,10 +147,23 @@ section {
   text-align: center;
   color: white;
 }
+.project .notif {
+  text-align: center;
+}
+.project h3 {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.project .notif span {
+  color: var(--main-color);
+}
 .project h1 span {
   color: var(--main-color);
 }
 .project .row h3 {
+  background: none;
   color: white;
   font-size: 4rem;
 }
